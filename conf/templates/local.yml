@@ -1,0 +1,9 @@
+# local地址
+
+# hubble 数据库信息
+hubble:
+  host: 192.168.24.131
+  port: 15432
+  user: hubble
+  password: hubble
+  database: db_hilbert_test

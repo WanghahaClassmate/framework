@@ -1,0 +1,16 @@
+# http 服务配置
+---
+
+# 应用名
+app_name: fxcd-service-http
+# 监听端口
+listen_port: 30001
+# http 服务同时启用的多进程数
+max_processes: 2
+
+# 服务端实现
+hubble_service:
+  clsname: framework.services.SqlalchemyServer
+  # url: postgresql+psycopg2://{{ hubble.user }}:{{ hubble.password }}@{{ hubble.host }}:{{ hubble.port }}/sqlalchemy?charset=utf8
+  url: postgresql+psycopg2://{{ hubble.user }}:{{ hubble.password }}@{{ hubble.host }}:{{ hubble.port }}/{{ hubble.database }}
+
